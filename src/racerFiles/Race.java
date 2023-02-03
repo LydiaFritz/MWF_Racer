@@ -17,15 +17,25 @@ public class Race {
 	}
 	
 	public void start() {
-		System.out.println("Starting the race");
+		update();
+		while(getWinner()==null) {
+			update();
+		}
 	}
 	
 	private void update() {
-		System.out.println("Updating racers");
+		for(int i = 0; i < racers.size(); i++) {
+			racers.get(i).run(timeSeconds);
+		}
 	}
 	
 	public Racer getWinner() {
-		return null;
+		Racer winner = null;
+		for(Racer r : racers) {
+			if(r.getDistanceCoveredInMeters()>=this.distanceMeters)
+				winner = r;
+		}
+		return winner;
 	}
 	
 
