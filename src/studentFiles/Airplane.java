@@ -1,4 +1,6 @@
-package racerFiles;
+package studentFiles;
+
+import racerFiles.Hare;
 
 public class Airplane extends Hare{
   private String[] inFlightMeal = {"Peanuts.", "Peanuts, again.", "Jet Fuel.", "Tide Pods.", "Burger King Whopper Deluxe.", "More than 3 fluid OZ of Water.", "A small family.", "A fork.", "A True TRCB-82-84 84\" Chef Base w/ (4) Drawers - 115v", "Nothing :(."};

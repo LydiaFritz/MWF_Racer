@@ -1,6 +1,8 @@
-package racerFiles;
+package studentFiles;
 
 import java.util.Random;
+
+import racerFiles.Racer;
 
 public class Mario extends Racer {
 

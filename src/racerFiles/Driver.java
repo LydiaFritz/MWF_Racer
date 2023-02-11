@@ -3,6 +3,10 @@
  */
 package racerFiles;
 
+import studentFiles.Airplane;
+import studentFiles.Mario;
+import studentFiles.NascarRacer;
+
 /**
  * @author a4432_asu
  *
@@ -36,6 +40,8 @@ public class Driver {
 		racer = new Airplane();
 		r.signUpRacer(racer);
 		racer = new Hare("Mr. Bunbun");
+		r.signUpRacer(racer);
+		racer = new NascarRacer("Billy Joe Wilkins");
 		r.signUpRacer(racer);
 	}
 }
