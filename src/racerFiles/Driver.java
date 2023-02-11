@@ -4,12 +4,15 @@
 package racerFiles;
 
 import studentFiles.Airplane;
+import studentFiles.DonkeyKong;
 import studentFiles.Dragon;
+import studentFiles.Eagle;
 import studentFiles.F1driver;
 import studentFiles.Mario;
 import studentFiles.NascarRacer;
 import studentFiles.Randomoor;
 import studentFiles.RoadRunnerBeepBeep;
+import studentFiles.SunBear;
 import studentFiles.Yoshi;
 import studentFiles.MarioKartChar;
 
@@ -60,6 +63,13 @@ public class Driver {
 		racer = new F1driver("Buddy the Elf", 1, 2);
 		r.signUpRacer(racer);
 		racer = new Dragon("Jerry");
+		r.signUpRacer(racer);
+		racer = new SunBear("Griz");
+		r.signUpRacer(racer);
+		racer = new DonkeyKong("DK");
+		r.signUpRacer(racer);
+		racer = new Eagle("Goldberg and Osborne");
+		r.signUpRacer(racer);
 		
 	}
 }
