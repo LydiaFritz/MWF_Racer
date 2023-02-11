@@ -37,14 +37,16 @@ public class Airplane extends Hare{
   }
   
   //need a run method.
-  //added by Ms Fritz
+  //ADDED by Ms Fritz
   public void run(double timeInSeconds) {
+	  //THIS METHOD CAN CALL ALL OF YOUR INDIVIDUAL METHODS
+	  //YOUR CLASS MUST OVERRIDE RUN.  IF IT DOESN'T, IT BECOMES AN
+	  //ABSTRACT CLASS
 	  fly();
 	  loop();
 	  eatMeal();
 	  //have to update the distance based on the time interval received
-	  this.distanceCoveredInMeters += timeInSeconds * this.minSpeedMetersPerSecond;
-	  
+	  this.distanceCoveredInMeters += timeInSeconds * this.minSpeedMetersPerSecond;	  
   }
   
   
