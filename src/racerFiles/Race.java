@@ -26,6 +26,7 @@ public class Race {
 	private void update() {
 		for(int i = 0; i < racers.size(); i++) {
 			racers.get(i).run(timeSeconds);
+			System.out.println();
 		}
 	}
 	

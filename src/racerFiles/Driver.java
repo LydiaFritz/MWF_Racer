@@ -4,8 +4,13 @@
 package racerFiles;
 
 import studentFiles.Airplane;
+import studentFiles.F1driver;
 import studentFiles.Mario;
 import studentFiles.NascarRacer;
+import studentFiles.Randomoor;
+import studentFiles.RoadRunnerBeepBeep;
+import studentFiles.Yoshi;
+import studentFiles.MarioKartChar;
 
 /**
  * @author a4432_asu
@@ -43,5 +48,17 @@ public class Driver {
 		r.signUpRacer(racer);
 		racer = new NascarRacer("Billy Joe Wilkins");
 		r.signUpRacer(racer);
+		racer = new RoadRunnerBeepBeep("RR");
+		r.signUpRacer(racer);
+		racer = new Randomoor("Randy the Rando");
+		r.signUpRacer(racer);
+		racer = new MarioKartChar("WARIO", 10, 100, "Dune Buggy");
+		r.signUpRacer(racer);
+		racer = new Yoshi("YOSHI");
+		r.signUpRacer(racer);
+		racer = new F1driver("Buddy the Elf", 1, 2);
+		r.signUpRacer(racer);
+		
+		
 	}
 }
