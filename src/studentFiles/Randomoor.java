@@ -27,7 +27,7 @@ public class Randomoor extends Racer {
 
 	@Override
 	public String toString() {
-		return "Randomoor []";
+		return getName();
 	}
 
 	@Override

@@ -7,6 +7,8 @@ public class Race {
 	private ArrayList<Racer> racers;
 	private double distanceMeters, timeSeconds;
 	
+	public static int currentInterval = 0;
+	
 	public Race(double distance, double time) {
 		racers = new ArrayList<Racer>();
 		this.distanceMeters = distance;
@@ -17,16 +19,29 @@ public class Race {
 		racers.add(r);
 	}
 	
-	private void announceRacers() {
+	private void announceRacers() throws InterruptedException {
 		//shuffle the field
 		Collections.shuffle(racers);
+		System.out.printf("Today's racers are...\n");
+		Thread.sleep(2000);
+		for(Racer r : racers) {
+			System.out.printf("\n\t%s the %s\n", r.getName(), 
+					r.getObjectType());
+			Thread.sleep(2000);
+		}
+		
 	}
 	
-	public void start() {
+	//UPDATED BY FRITZ to show current interval
+	public void start() throws InterruptedException {
 		//shuffle and announce the racers
 		this.announceRacers();
+		currentInterval++;
+		System.out.printf("\nInterval %d beginning...\n\n", currentInterval);
 		update();
 		while(getWinner()==null) {
+			currentInterval++;
+			System.out.printf("\n\nInterval %d beginning...\n", currentInterval);
 			update();
 		}
 	}

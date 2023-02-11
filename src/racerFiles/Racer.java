@@ -21,6 +21,7 @@ public abstract class Racer {
 		//System.out.println("Racer constructor");
 	}
 	
+
 	public String getName() {return name;}
 	
 	/**
@@ -31,6 +32,12 @@ public abstract class Racer {
 	}
 	
 	public abstract void run(double timeInSeconds);
+	
+	public String getObjectType() {
+		String canonicalName =  this.getClass().getCanonicalName();
+		return canonicalName.substring(canonicalName.indexOf(".")+1);
+	}
+	
 	
 	@Override
 	public String toString() {

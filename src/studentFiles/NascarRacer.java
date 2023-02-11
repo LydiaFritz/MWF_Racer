@@ -13,7 +13,7 @@ public class NascarRacer extends Racer {
 
 	@Override
 	public String toString() {
-		return "nascarRacer";
+		return getName();
 	}
 
 	public void run(double timeIntervalSeconds) {

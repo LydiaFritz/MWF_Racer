@@ -43,7 +43,16 @@ public class Dragon extends Racer{
             double speed = this.minSpeedMetersPerSecond + diff;
         
             distanceCoveredInMeters += speed * timeInSeconds;
+            printRunStatement(speed*timeInSeconds);
         }
     }
+    
+  //ADDED by L FRITZ so output shows how far each racer travels in each interval
+  	private void printRunStatement(double distance) {
+  		System.out.printf("%s the Dragon advances %.1f meters for a total of %.1f meters.\n", getName(), distance,
+  				this.distanceCoveredInMeters);
+  	}
+    
+    
 }
 

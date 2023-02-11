@@ -25,12 +25,13 @@ import studentFiles.MarioKartChar;
 public class Driver {
 
 	private static final double TIME_IN_SECONDS = 5.0;
-	private static final double RACE_DISTANCE_METERS = 200.0;
+	private static final double RACE_DISTANCE_METERS = 2000.0;
 
 	/**
 	 * @param args
+	 * @throws InterruptedException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		Race theRace = new Race(RACE_DISTANCE_METERS, TIME_IN_SECONDS);
 		signUpRacers(theRace);
@@ -56,13 +57,13 @@ public class Driver {
 		r.signUpRacer(racer);
 		racer = new RoadRunnerBeepBeep("RR");
 		r.signUpRacer(racer);
-		racer = new Randomoor("Randy the Rando");
+		racer = new Randomoor("Randy Rando");
 		r.signUpRacer(racer);
 		racer = new MarioKartChar("WARIO", 10, 100, "Dune Buggy");
 		r.signUpRacer(racer);
 		racer = new Yoshi("YOSHI");
 		r.signUpRacer(racer);
-		racer = new F1driver("Buddy the Elf", 1, 2);
+		racer = new F1driver("Speed Diva", 1, 2);
 		r.signUpRacer(racer);
 		racer = new Dragon("Jerry");
 		r.signUpRacer(racer);
@@ -70,12 +71,14 @@ public class Driver {
 		r.signUpRacer(racer);
 		racer = new DonkeyKong("DK");
 		r.signUpRacer(racer);
-		racer = new Eagle("Goldberg and Osborne");
+		racer = new Eagle("Justice");
 		r.signUpRacer(racer);
 		racer = new Frog("Olivia", 1, 4);
 		r.signUpRacer(racer);
 		racer = new Sloth("Snuggles");
+		r.signUpRacer(racer);
 		racer = new MagicRabbit("Trixie");
+		r.signUpRacer(racer);
 		
 	}
 }

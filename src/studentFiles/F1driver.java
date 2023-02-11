@@ -23,7 +23,7 @@ public class F1driver extends Racer{
 	}
 	
 	public String getName() {
-		return "PRIVATE VARIABLE";
+		return super.getName();
 	}
 	
 	public void run(double timeIntervalSeconds) {
@@ -37,15 +37,23 @@ public class F1driver extends Racer{
 			//boost speed by 12 if inspired
 			double speed = diff + this.minSpeedMetersPerSecond + 12;
 			this.distanceCoveredInMeters += (speed * timeIntervalSeconds);
-			
+			printRunStatement(speed * timeIntervalSeconds);
 			System.out.println(getName() + " seems to be excited! He's flying..");			
 		} else {
 			//keep the speed if not inspired
 			double speed = diff + this.minSpeedMetersPerSecond;
 			this.distanceCoveredInMeters += (speed * timeIntervalSeconds);
+			printRunStatement(speed * timeIntervalSeconds);
 			
 			System.out.println(getName() +" is not in a good day.");
 		}
+		
 	}
+	 //ADDED by L FRITZ so output shows how far each racer travels in each interval
+  	private void printRunStatement(double distance) {
+  		System.out.printf("%s the F1 driver advances %.1f meters for a total of %.1f meters.\n", getName(), distance,
+  				this.distanceCoveredInMeters);
+  	}
+
 }
     

@@ -46,7 +46,15 @@ public class Airplane extends Hare{
 	  loop();
 	  eatMeal();
 	  //have to update the distance based on the time interval received
+	  double distTraveled = timeInSeconds * this.minSpeedMetersPerSecond;
+	  printRunStatement(distTraveled);
 	  this.distanceCoveredInMeters += timeInSeconds * this.minSpeedMetersPerSecond;	  
+  }
+  
+  //ADDED by L FRITZ so output shows how far each racer travels in each interval
+  private void printRunStatement(double distance) {
+	  System.out.printf("%s the airplane advances %.1f meters for a total of %.1f meters.\n", 
+			  getName(), distance, this.distanceCoveredInMeters);
   }
   
   

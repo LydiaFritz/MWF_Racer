@@ -36,7 +36,7 @@ public class Eagle extends Racer {
 
   @Override
   public void run(double timeInSeconds) {
-    {
+    
       if (isFlying()) {
         System.out.println("The Eagle is flying.");
       } else {
@@ -48,10 +48,16 @@ public class Eagle extends Racer {
         double speed = this.minSpeedMetersPerSecond - diff;
 
         distanceCoveredInMeters += speed * timeInSeconds;
+        printRunStatement(speed*timeInSeconds);
       }
     }
+  //ADDED by L FRITZ so output shows how far each racer travels in each interval
+  	private void printRunStatement(double distance) {
+  		System.out.printf("%s Donkey Kong advances %.1f meters for a total of %.1f meters.\n", getName(), distance,
+  				this.distanceCoveredInMeters);
+  	}
 
   }
 
-}
+
     
