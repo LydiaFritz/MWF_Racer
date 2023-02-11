@@ -12,7 +12,8 @@ import java.util.Random;
 public class Hare extends Racer {
 
 	private static Random r = new Random();
-	private boolean arrogant;
+	//updated access to protected for subclass
+	protected boolean arrogant;
 
 	@Override
 	public String toString() {

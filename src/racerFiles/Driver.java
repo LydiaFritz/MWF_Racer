@@ -8,10 +8,12 @@ import studentFiles.DonkeyKong;
 import studentFiles.Dragon;
 import studentFiles.Eagle;
 import studentFiles.F1driver;
+import studentFiles.Frog;
 import studentFiles.Mario;
 import studentFiles.NascarRacer;
 import studentFiles.Randomoor;
 import studentFiles.RoadRunnerBeepBeep;
+import studentFiles.Sloth;
 import studentFiles.SunBear;
 import studentFiles.Yoshi;
 import studentFiles.MarioKartChar;
@@ -70,6 +72,10 @@ public class Driver {
 		r.signUpRacer(racer);
 		racer = new Eagle("Goldberg and Osborne");
 		r.signUpRacer(racer);
+		racer = new Frog("Olivia", 1, 4);
+		r.signUpRacer(racer);
+		racer = new Sloth("Snuggles");
+		racer = new MagicRabbit("Trixie");
 		
 	}
 }
