@@ -4,6 +4,7 @@
 package racerFiles;
 
 import studentFiles.Airplane;
+import studentFiles.Dragon;
 import studentFiles.F1driver;
 import studentFiles.Mario;
 import studentFiles.NascarRacer;
@@ -58,7 +59,7 @@ public class Driver {
 		r.signUpRacer(racer);
 		racer = new F1driver("Buddy the Elf", 1, 2);
 		r.signUpRacer(racer);
-		
+		racer = new Dragon("Jerry");
 		
 	}
 }
