@@ -12,11 +12,13 @@ import java.util.Random;
 public class Hare extends Racer {
 
 	private static Random r = new Random();
+	private boolean arrogant;
 
 	@Override
 	public String toString() {
 		return "Hare []";
 	}
+	
 
 	/**
 	 * @param name
@@ -25,20 +27,22 @@ public class Hare extends Racer {
 	 */
 	public Hare(String name) {
 		super(name, 10, 15);
-		// TODO Auto-generated constructor stub
+		setArrogant();
+		//System.out.println("Hare constructor");
 	}
 
-	private boolean isArrogant() {
+	private void setArrogant() {
 		if (r.nextDouble() <= .6)
-			return true;
+			this.arrogant = true;
 		else
-			return false;
+			this.arrogant = false;
 	}
 
 	@Override
 	public void run(double timeInSeconds) {
 		{
-			if (isArrogant()) {
+			setArrogant();
+			if (arrogant) {
 				System.out.println("The arrogant hare is napping.");
 			} else {
 				System.out.println("Hare is hopping");

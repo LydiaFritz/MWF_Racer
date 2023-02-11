@@ -29,11 +29,13 @@ public class Driver {
 	}
 
 	private static void signUpRacers(Race r) {
-		Racer racer = new Hare("Bob");
+		Racer racer = new Mario("Mario");
 		r.signUpRacer(racer);
 		racer = new Tortoise("Amy");
 		r.signUpRacer(racer);
-		racer = new Tortoise("Cal");
+		racer = new Airplane();
+		r.signUpRacer(racer);
+		racer = new Hare("Mr. Bunbun");
 		r.signUpRacer(racer);
 	}
 }

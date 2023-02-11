@@ -18,6 +18,7 @@ public class Tortoise extends Racer {
 	 */
 	public Tortoise(String name) {
 		super(name, 2, 3);
+		//System.out.println("Tortoise constructor");
 		// TODO Auto-generated constructor stub
 	}
 

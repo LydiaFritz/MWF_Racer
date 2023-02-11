@@ -18,7 +18,10 @@ public abstract class Racer {
 		this.name = name;
 		this.maxSpeedMetersPerSecond = maxSpeed;
 		this.minSpeedMetersPerSecond = minSpeed;
+		//System.out.println("Racer constructor");
 	}
+	
+	public String getName() {return name;}
 	
 	/**
 	 * @return the distanceCoveredInMeters
