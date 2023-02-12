@@ -42,7 +42,8 @@ public class Randomoor extends Racer {
 			double speed = this.minSpeedMetersPerSecond + diff;
 			
 			distanceCoveredInMeters += speed*timeInSeconds;
-            System.out.println("Randomoor covered: " + distanceCoveredInMeters);
+            //System.out.println("Randomoor covered: " + distanceCoveredInMeters);
+			this.printRunStatement(speed*timeInSeconds);
 		}
 
 		

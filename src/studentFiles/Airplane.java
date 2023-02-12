@@ -51,11 +51,13 @@ public class Airplane extends Hare{
 	  this.distanceCoveredInMeters += timeInSeconds * this.minSpeedMetersPerSecond;	  
   }
   
+  //REMOVED by L FRITZ AND ADDED TO RACER CLASS (SEE NOTE IN RACER)
   //ADDED by L FRITZ so output shows how far each racer travels in each interval
-  private void printRunStatement(double distance) {
-	  System.out.printf("%s the airplane advances %.1f meters for a total of %.1f meters.\n", 
-			  getName(), distance, this.distanceCoveredInMeters);
-  }
+	/*
+	 * private void printRunStatement(double distance) { System.out.
+	 * printf("%s the airplane advances %.1f meters for a total of %.1f meters.\n",
+	 * getName(), distance, this.distanceCoveredInMeters); }
+	 */
   
   
 }

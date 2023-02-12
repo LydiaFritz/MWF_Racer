@@ -35,9 +35,11 @@ public class DonkeyKong extends /* racer(){ */ Racer {
 		this.printRunStatement(speed * timeInSeconds);
 	}
 
+//REMOVED BY L FRITZ AND ADDED TO RACER	
 //ADDED by L FRITZ so output shows how far each racer travels in each interval
-	private void printRunStatement(double distance) {
-		System.out.printf("%s Donkey Kong advances %.1f meters for a total of %.1f meters.\n", getName(), distance,
-				this.distanceCoveredInMeters);
-	}
+	/*
+	 * private void printRunStatement(double distance) { System.out.
+	 * printf("%s Donkey Kong advances %.1f meters for a total of %.1f meters.\n",
+	 * getName(), distance, this.distanceCoveredInMeters); }
+	 */
 }

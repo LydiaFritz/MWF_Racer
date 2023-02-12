@@ -51,12 +51,14 @@ public class Eagle extends Racer {
         printRunStatement(speed*timeInSeconds);
       }
     }
-  //ADDED by L FRITZ so output shows how far each racer travels in each interval
-  	private void printRunStatement(double distance) {
-  		System.out.printf("%s Donkey Kong advances %.1f meters for a total of %.1f meters.\n", getName(), distance,
-  				this.distanceCoveredInMeters);
-  	}
-
+  
+  //MOVED TO RACER CLASS
+	/*
+	 * //ADDED by L FRITZ so output shows how far each racer travels in each
+	 * interval private void printRunStatement(double distance) { System.out.
+	 * printf("%s Donkey Kong advances %.1f meters for a total of %.1f meters.\n",
+	 * getName(), distance, this.distanceCoveredInMeters); }
+	 */
   }
 
 

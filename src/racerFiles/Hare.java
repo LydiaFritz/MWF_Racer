@@ -12,14 +12,13 @@ import java.util.Random;
 public class Hare extends Racer {
 
 	private static Random r = new Random();
-	//updated access to protected for subclass
+	// updated access to protected for subclass
 	protected boolean arrogant;
 
 	@Override
 	public String toString() {
-		return "Hare []";
+		return getName();
 	}
-	
 
 	/**
 	 * @param name
@@ -29,7 +28,7 @@ public class Hare extends Racer {
 	public Hare(String name) {
 		super(name, 10, 15);
 		setArrogant();
-		//System.out.println("Hare constructor");
+		// System.out.println("Hare constructor");
 	}
 
 	private void setArrogant() {
@@ -41,21 +40,25 @@ public class Hare extends Racer {
 
 	@Override
 	public void run(double timeInSeconds) {
-		{
-			setArrogant();
-			if (arrogant) {
-				System.out.println("The arrogant hare is napping.");
-			} else {
-				System.out.println("Hare is hopping");
-				Random r = new Random();
-				double rate = r.nextDouble();
-				double diff = this.maxSpeedMetersPerSecond - this.minSpeedMetersPerSecond;
-				diff *= rate;
-				double speed = this.minSpeedMetersPerSecond + diff;
-
-				distanceCoveredInMeters += speed * timeInSeconds;
-			}
+		double distance = 0.0;
+		setArrogant();
+		if (arrogant) {
+			System.out.printf("%s is being arrogant and is napping.", getName());
+		} else {
+			System.out.printf("%s the hare is hopping.\n", getName());
+			Random r = new Random();
+			double rate = r.nextDouble();
+			double diff = this.maxSpeedMetersPerSecond - this.minSpeedMetersPerSecond;
+			diff *= rate;
+			double speed = this.minSpeedMetersPerSecond + diff;
+			distance = speed * timeInSeconds;
+			distanceCoveredInMeters += distance;
+			
 		}
+		
+		//WE HAVE TO CALL THIS STATEMENT EITHER WAY, SO IT SHOULD
+		//GO OUTSIDE THE IF-ELSE
+		this.printRunStatement(distance);
 
 	}
 

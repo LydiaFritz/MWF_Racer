@@ -33,6 +33,16 @@ public abstract class Racer {
 	
 	public abstract void run(double timeInSeconds);
 	
+	//NOTE FROM THE PROFESSOR:
+	//I REALIZED, AFTER ADDING THE SAME CODE TO ALL OF THE SUBCLASSES,
+	//THAT A BETTER DESIGN WOULD INCLUDE THE CODE IN THE RACER CLASS WHERE
+	//EACH SUBCLASS WOULD INCLUDE IT BY INHERITANCE (which is exactly 
+	//the point of inheritance).
+	public void printRunStatement(double distance) {
+		  System.out.printf("%s the %s advances %.1f meters for a total of %.1f meters.\n", 
+				  getName(), getObjectType(), distance, this.distanceCoveredInMeters);
+	  }
+	
 	public String getObjectType() {
 		String canonicalName =  this.getClass().getCanonicalName();
 		return canonicalName.substring(canonicalName.indexOf(".")+1);

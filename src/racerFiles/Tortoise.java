@@ -38,6 +38,7 @@ public class Tortoise extends Racer {
 			double speed = this.minSpeedMetersPerSecond + diff;
 			
 			distanceCoveredInMeters += speed*timeInSeconds;
+			this.printRunStatement(speed*timeInSeconds);
 		}
 
 		

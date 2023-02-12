@@ -27,7 +27,7 @@ public class Race {
 		for(Racer r : racers) {
 			System.out.printf("\n\t%s the %s\n", r.getName(), 
 					r.getObjectType());
-			Thread.sleep(2000);
+			Thread.sleep(1200);
 		}
 		
 	}

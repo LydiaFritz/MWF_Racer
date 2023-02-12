@@ -49,11 +49,13 @@ public class F1driver extends Racer{
 		}
 		
 	}
-	 //ADDED by L FRITZ so output shows how far each racer travels in each interval
-  	private void printRunStatement(double distance) {
-  		System.out.printf("%s the F1 driver advances %.1f meters for a total of %.1f meters.\n", getName(), distance,
-  				this.distanceCoveredInMeters);
-  	}
+	//MOVED TO RACER
+	/*
+	 * //ADDED by L FRITZ so output shows how far each racer travels in each
+	 * interval private void printRunStatement(double distance) { System.out.
+	 * printf("%s the F1 driver advances %.1f meters for a total of %.1f meters.\n",
+	 * getName(), distance, this.distanceCoveredInMeters); }
+	 */
 
 }
     

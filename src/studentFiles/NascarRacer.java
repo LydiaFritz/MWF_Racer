@@ -24,5 +24,6 @@ public class NascarRacer extends Racer {
 		diff *= rate;
 		double speed = diff + this.maxSpeedMetersPerSecond;
 		this.distanceCoveredInMeters += (speed * timeIntervalSeconds);
+		this.printRunStatement(speed*timeIntervalSeconds);
 	}
 }

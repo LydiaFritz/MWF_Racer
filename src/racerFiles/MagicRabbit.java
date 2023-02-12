@@ -24,17 +24,22 @@ public class MagicRabbit extends Hare {
 
 	@Override
 	public void run(double timeInSeconds) {
+		
 		setDaylight();
+		double distance = 0.0;
+		
 		if(arrogant) {
 			System.out.println(toString() + " is napping.");
 		}
 		else if(!daylight) {
-			this.distanceCoveredInMeters += timeInSeconds*this.maxSpeedMetersPerSecond;
+			distance = timeInSeconds*this.maxSpeedMetersPerSecond;
 		}
 		else {
-			this.distanceCoveredInMeters += timeInSeconds*this.minSpeedMetersPerSecond;
+			distance = timeInSeconds*this.minSpeedMetersPerSecond;
 		}
 		
+		this.distanceCoveredInMeters += distance;
+		printRunStatement(distance);
 		
 	}
 	
