@@ -43,8 +43,11 @@ public abstract class Racer {
 				  getName(), getObjectType(), distance, this.distanceCoveredInMeters);
 	  }
 	
+	//METHOD GETS THE CLASS CANONICAL NAME
+	//AND STRIPS AWAY THE PACKAGE
 	public String getObjectType() {
 		String canonicalName =  this.getClass().getCanonicalName();
+		//return canonicalName;
 		return canonicalName.substring(canonicalName.indexOf(".")+1);
 	}
 	

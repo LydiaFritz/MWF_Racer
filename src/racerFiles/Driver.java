@@ -25,7 +25,7 @@ import studentFiles.MarioKartChar;
 public class Driver {
 
 	private static final double TIME_IN_SECONDS = 5.0;
-	private static final double RACE_DISTANCE_METERS = 2000.0;
+	private static final double RACE_DISTANCE_METERS = 200.0;
 
 	/**
 	 * @param args
@@ -41,39 +41,40 @@ public class Driver {
 	}
 
 	private static void announceWinner(Race r) {
+		System.out.print("The Race is over!\n\t");
 		System.out.println(r.getWinner() + " is the winner.");
 	}
 
 	private static void signUpRacers(Race r) {
 		Racer racer = new Mario("Mario");
 		r.signUpRacer(racer);
-		racer = new Tortoise("Amy");
+		racer = new Tortoise("Shelly");
 		r.signUpRacer(racer);
 		racer = new Airplane();
 		r.signUpRacer(racer);
-		racer = new Hare("Mr. Bunbun");
+		racer = new Hare("Cottontail");
 		r.signUpRacer(racer);
-		racer = new NascarRacer("Billy Mack");
+		racer = new NascarRacer("BillyMack");
 		r.signUpRacer(racer);
 		racer = new RoadRunnerBeepBeep("RR");
 		r.signUpRacer(racer);
-		racer = new Randomoor("Randy Rando");
+		racer = new Randomoor("RandyRando");
 		r.signUpRacer(racer);
-		racer = new MarioKartChar("WARIO", 10, 100, "Dune Buggy");
+		racer = new MarioKartChar("Wario", 10, 100, "Dune Buggy");
 		r.signUpRacer(racer);
-		racer = new Yoshi("YOSHI");
+		racer = new Yoshi("Bella");
 		r.signUpRacer(racer);
 		racer = new F1driver("Andre", 1, 2);
-		r.signUpRacer(racer);
+		//r.signUpRacer(racer);
 		racer = new Dragon("Sparky");
 		r.signUpRacer(racer);
 		racer = new SunBear("Grizzle");
 		r.signUpRacer(racer);
 		racer = new DonkeyKong("D.K.");
 		r.signUpRacer(racer);
-		racer = new Eagle("Swift Justice");
+		racer = new Eagle("Artemis");
 		r.signUpRacer(racer);
-		racer = new Frog("Buggles", 1, 4);
+		racer = new Frog("Princess", 1, 4);
 		r.signUpRacer(racer);
 		racer = new Sloth("Snuggles");
 		r.signUpRacer(racer);
