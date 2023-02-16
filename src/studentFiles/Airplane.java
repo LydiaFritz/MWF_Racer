@@ -1,5 +1,7 @@
 package studentFiles;
 
+import java.util.Random;
+
 import racerFiles.Hare;
 
 public class Airplane extends Hare{
@@ -23,7 +25,9 @@ public class Airplane extends Hare{
   }
 
   public void eatMeal(){
-    int r = (int)Math.random()*10;
+	Random rnd = new Random();
+	  
+    int r = rnd.nextInt(10);
     if(r == 9){System.out.println("You got served " + inFlightMeal[r]);}
     if(r == 8){System.out.println("You got served " + inFlightMeal[r]);}
     if(r == 7){System.out.println("You got served " + inFlightMeal[r]);}

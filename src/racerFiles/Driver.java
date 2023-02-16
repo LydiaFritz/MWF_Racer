@@ -29,7 +29,7 @@ public class Driver {
 
 	/**
 	 * @param args
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
 	public static void main(String[] args) throws InterruptedException {
 
@@ -58,16 +58,15 @@ public class Driver {
 		r.signUpRacer(racer);
 		racer = new RoadRunnerBeepBeep("RR");
 		r.signUpRacer(racer);
+
 		racer = new Randomoor("RandyRando");
 		r.signUpRacer(racer);
 		racer = new MarioKartChar("Wario", 10, 100, "Dune Buggy");
 		r.signUpRacer(racer);
 		racer = new Yoshi("Bella");
 		r.signUpRacer(racer);
-		racer = new F1driver("Andre", 1, 2);
+		racer = new F1driver("Andre", 1, 2); // r.signUpRacer(racer); racer = new Dragon("Sparky");
 		//r.signUpRacer(racer);
-		racer = new Dragon("Sparky");
-		r.signUpRacer(racer);
 		racer = new SunBear("Grizzle");
 		r.signUpRacer(racer);
 		racer = new DonkeyKong("D.K.");
@@ -80,6 +79,6 @@ public class Driver {
 		r.signUpRacer(racer);
 		racer = new MagicRabbit("Trixie");
 		r.signUpRacer(racer);
-		
+
 	}
 }

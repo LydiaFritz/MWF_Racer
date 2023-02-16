@@ -27,7 +27,7 @@ public class Race {
 		for(Racer r : racers) {
 			System.out.printf("\n\t%s the %s\n", r.getName(), 
 					r.getObjectType());
-			Thread.sleep(1200);
+			Thread.sleep(750);
 		}
 		
 	}
@@ -52,7 +52,7 @@ public class Race {
 			System.out.println();
 			//slow it down
 			try {
-				Thread.sleep(1200);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

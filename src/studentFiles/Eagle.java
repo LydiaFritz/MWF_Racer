@@ -39,6 +39,7 @@ public class Eagle extends Racer {
     
       if (isFlying()) {
         System.out.println("The Eagle is flying.");
+        printRunStatement(0.0);
       } else {
         System.out.println("Eagle is running");
         Random r = new Random();
